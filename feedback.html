@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html">My Website</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="feedback.html">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="photos.html">Photos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <form action="#">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="fullname" placeholder="Enter your name" required><br>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="Email" placeholder="Enter your email" required><br>
+    <label>Rating Section:</label>
+     <input type="radio" id="very" name="rating" value="very satisfied">
+    <label for="very">Very Satisfied</label>
+     <input type="radio" id="satisfied" name="rating" value="satisfied">
+    <label for="satisfied">Satisfied</label>
+     <input type="radio" id="neutral" name="rating" value="neutral">
+    <label for="neutral">Neutral</label>
+     <input type="radio" id="unsatisfied" name="rating" value="unsatisfied">
+    <label for="unsatisfied">Unsatisfied</label><br>
+
+    <label> Interest Section:</label>
+    <input type="checkbox" id="web" value="web dev" name="interest">
+     <label for="web"> Web development</label>
+    <input type="checkbox" id="mobile" value="mobile dev" name="interest">
+     <label for="mobile"> Mobile development</label>
+    <input type="checkbox" id="AI" value="ai & machine learning" name="interest">
+      <label for="AI"> AI & Machine Learning</label>
+
+      <br><label for="Country"> Country</label>
+        <select name="Country" id="Country" required>
+            <option selected disabled> Choose your Country</option>
+            <option value="Nepal">Nepal</option>
+             <option value="Bhutan">Bhutan</option>
+              <option value="China">China</option>
+        </select><br><br>
+        <label for="feedback">For feedback</label>
+              <textarea name="feedback" id="feedback" placeholder="Write your feedback here"></textarea><br><br>
+              <input type="submit" value="submit">
+              </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
